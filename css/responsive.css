@@ -1,0 +1,305 @@
+/* Ajustes de navegación y composición para pantallas pequeñas. */
+@media (max-width: 900px) {
+  .wrap {
+    width: min(100% - 44px, var(--wide));
+  }
+  .site-header {
+    padding-inline: 22px;
+  }
+  .main-nav {
+    gap: 19px;
+  }
+  .hero {
+    min-height: 570px;
+    gap: 8px;
+  }
+  .hero-copy {
+    padding-left: 3px;
+  }
+  .hero h1 {
+    font-size: 53px;
+  }
+  .hero-art {
+    transform: scale(0.9);
+  }
+  .intro-section,
+  .process-wrap {
+    gap: 45px;
+  }
+  .featured-grid {
+    gap: 14px;
+  }
+  .feature-art {
+    height: 280px;
+  }
+  .feature-art strong {
+    font-size: 31px;
+  }
+  .contact-layout {
+    gap: 45px;
+  }
+  .plans-grid {
+    gap: 11px;
+  }
+  .plan-card {
+    padding: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .wrap {
+    width: calc(100% - 40px);
+  }
+  .site-header {
+    height: 70px;
+    padding-inline: 20px;
+  }
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 0;
+    background: transparent;
+    padding: 10px;
+  }
+  .menu-toggle span {
+    width: 22px;
+    height: 1px;
+    background: var(--ink);
+  }
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    padding: 18px 22px 25px;
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .main-nav.open {
+    display: flex;
+  }
+  .main-nav > a {
+    padding: 12px 4px;
+  }
+  .nav-cta {
+    margin-top: 8px;
+    text-align: center;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 53px;
+    padding-bottom: 30px;
+    gap: 0;
+  }
+  .hero-copy {
+    padding: 0;
+  }
+  .hero h1 {
+    font-size: clamp(43px, 12vw, 58px);
+  }
+  .hero-text {
+    font-size: 13px;
+  }
+  .hero-note {
+    margin-top: 26px;
+  }
+  .hero-art {
+    height: 430px;
+    transform: none;
+    margin-top: 4px;
+  }
+  .invite-card {
+    transform: rotate(2deg) scale(0.88);
+  }
+  .hero-art .invite-card {
+    animation-name: invitation-float-mobile;
+  }
+  @keyframes invitation-float-mobile {
+    0%,
+    100% {
+      transform: rotate(2deg) scale(0.88) translateY(0);
+    }
+    50% {
+      transform: rotate(2deg) scale(0.88) translateY(-8px);
+    }
+  }
+  .art-backdrop {
+    height: 82%;
+    width: 77%;
+    top: 4%;
+  }
+  .art-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .trust-inner {
+    height: auto;
+    padding-block: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    font-size: 8px;
+  }
+  .trust-inner i {
+    display: none;
+  }
+  .section {
+    padding-block: 70px;
+  }
+  .intro-section,
+  .process-wrap {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .intro-section h2,
+  .section-heading h2,
+  .process-section h2,
+  .closing-cta h2 {
+    font-size: 40px;
+  }
+  .intro-copy {
+    font-size: 13px;
+  }
+  .featured-section {
+    padding-block: 65px;
+  }
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 25px;
+  }
+  .section-heading h2 {
+    font-size: 38px;
+  }
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .feature-art {
+    height: 340px;
+  }
+  .process-wrap {
+    gap: 37px;
+  }
+  .closing-inner {
+    min-height: 350px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+    padding-block: 45px;
+  }
+  .closing-cta h2 {
+    font-size: 40px;
+  }
+  .button-light {
+    margin: 0;
+  }
+  .closing-flower {
+    font-size: 150px;
+    right: -25px;
+    bottom: -36px;
+  }
+  .footer-top {
+    align-items: flex-start;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .footer-top > p {
+    width: 100%;
+    order: 3;
+    margin: 0;
+  }
+  .footer-links {
+    gap: 16px;
+    font-size: 10px;
+  }
+  .footer-bottom {
+    gap: 8px;
+    flex-direction: column;
+  }
+  .page-hero {
+    padding: 50px 0 35px;
+  }
+  .page-hero h1 {
+    font-size: 46px;
+  }
+  .page-hero p:last-child {
+    font-size: 13px;
+  }
+  .catalog-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .filter-list {
+    gap: 7px;
+  }
+  .filter-button {
+    padding: 7px 10px;
+  }
+  .catalog-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-bottom: 65px;
+  }
+  .catalog-art {
+    height: 340px;
+  }
+  .plans-grid {
+    grid-template-columns: 1fr;
+    padding: 35px 0 45px;
+    gap: 13px;
+  }
+  .plan-card {
+    min-height: 0;
+  }
+  .plan-card > p {
+    min-height: 0;
+  }
+  .plan-note {
+    padding-bottom: 45px;
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 35px 0 65px;
+  }
+  .contact-aside h2 {
+    font-size: 32px;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .field.full {
+    grid-column: auto;
+  }
+  .form-status {
+    grid-column: auto;
+  }
+  .template-preview {
+    margin: 35px auto 60px;
+    padding: 40px 18px 26px;
+  }
+  .template-preview h2 {
+    font-size: 35px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

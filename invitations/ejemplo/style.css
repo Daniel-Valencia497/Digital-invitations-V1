@@ -1,0 +1,136 @@
+/* Paleta propia de esta invitación de ejemplo. */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #211722;
+  color: #f0e8ed;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+.invitation {
+  width: min(440px, calc(100% - 30px));
+  min-height: 650px;
+  background: #2b222d;
+  margin: 25px;
+  padding: 48px 32px;
+  text-align: center;
+  box-shadow: 0 15px 60px #120e1650;
+  position: relative;
+  overflow: hidden;
+}
+.invitation:before,
+.invitation:after {
+  content: "❧";
+  position: absolute;
+  font-size: 100px;
+  color: #715080;
+  opacity: 0.28;
+}
+.invitation:before {
+  left: -27px;
+  top: 5px;
+  transform: rotate(-40deg);
+}
+.invitation:after {
+  right: -24px;
+  bottom: -14px;
+  transform: rotate(140deg);
+}
+.eyebrow {
+  font:
+    10px Arial,
+    sans-serif;
+  letter-spacing: 0.22em;
+}
+.sun {
+  font-size: 44px;
+  color: #b8425a;
+  margin: 22px;
+}
+.script {
+  font-style: italic;
+  font-size: 43px;
+  line-height: 0.95;
+  color: #df7580;
+  margin: 0 0 25px;
+}
+h1 {
+  font-size: 34px;
+  font-weight: 400;
+  margin: 0;
+}
+h1 span {
+  font-size: 17px;
+  font-style: italic;
+  color: #df7580;
+}
+.rule {
+  height: 1px;
+  background: #65485d;
+  width: 68%;
+  margin: 25px auto;
+}
+.details {
+  font:
+    11px Arial,
+    sans-serif;
+  letter-spacing: 0.13em;
+  margin: 10px;
+}
+.address {
+  font-size: 13px;
+  color: #d2bdca;
+  margin: 8px;
+}
+.rsvp-open,
+form button {
+  margin: 22px 0 0;
+  background: #6b2949;
+  color: white;
+  border: 0;
+  padding: 13px 20px;
+  font:
+    11px Arial,
+    sans-serif;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.rsvp-open span {
+  margin-left: 14px;
+}
+form {
+  max-width: 270px;
+  margin: 15px auto 0;
+  text-align: left;
+  font:
+    11px Arial,
+    sans-serif;
+}
+form label {
+  display: block;
+  margin: 11px 0 5px;
+}
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #62485c;
+  background: transparent;
+  color: #f3eaf0;
+}
+form button {
+  margin-top: 14px;
+  width: 100%;
+}
+#status {
+  line-height: 1.5;
+}
+.footnote {
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 24px;
+}

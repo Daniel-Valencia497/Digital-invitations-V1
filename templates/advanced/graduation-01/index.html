@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Una invitación de graduación para celebrar lo que viene."
+    />
+    <title>Promoción 2026 — Lo mejor está por venir</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="overline">PROMOCIÓN · DOS MIL VEINTISÉIS</p>
+        <div class="star">✦</div>
+        <p class="serif">Lo mejor<br />está por venir.</p>
+        <h1>CELEBREMOS<br />EL CAMINO</h1>
+        <p class="date">VIERNES, 20 NOVIEMBRE · 7:00 P. M.</p>
+        <a href="#details">DESLIZA PARA DESCUBRIR ↓</a>
+      </section>
+      <section class="details" id="details">
+        <p class="overline">UNA NOCHE PARA RECORDAR</p>
+        <h2>Lo logramos.<br /><em>Y esto recién empieza.</em></h2>
+        <p>
+          Después de tantos pasos, queremos brindar contigo por todo lo que
+          viene.
+        </p>
+        <div class="event">
+          <span>LA CELEBRACIÓN</span><strong>Casa Hacienda El Lago</strong
+          ><small>Autopista Norte, Km. 17 · Bogotá</small> <span>VESTUARIO</span
+          ><strong>Formal · tonos libres</strong>
+        </div>
+        <a
+          class="map"
+          href="https://maps.google.com/?q=Casa+Hacienda+El+Lago+Bogota"
+          target="_blank"
+          rel="noreferrer"
+          >Abrir ubicación ↗</a
+        >
+        <button id="show-rsvp" aria-expanded="false">
+          Confirmar asistencia
+        </button>
+        <!-- La respuesta RSVP se envía al contacto configurado para el evento. -->
+        <form id="rsvp-form" hidden>
+          <label for="guest">Tu nombre</label
+          ><input id="guest" name="guest" required maxlength="70" />
+          <label for="attending">¿Nos acompañas?</label>
+          <select id="attending" name="attending" required>
+            <option value="">Elige una opción</option>
+            <option>Sí, allí estaré</option>
+            <option>Esta vez no podré</option>
+          </select>
+          <label for="guests">Acompañantes</label
+          ><select id="guests" name="guests">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+          <label for="note">Déjanos un mensaje</label
+          ><textarea id="note" name="note" maxlength="250"></textarea>
+          <button type="submit">Enviar por WhatsApp</button>
+          <p id="status" role="status"></p>
+        </form>
+      </section>
+      <footer>HECHO CON ORGULLO <span>✳</span> PROMOCIÓN 2026</footer>
+    </main>
+    <script src="../../../js/whatsapp.js"></script>
+    <script src="../../../js/rsvp.js"></script>
+  </body>
+</html>

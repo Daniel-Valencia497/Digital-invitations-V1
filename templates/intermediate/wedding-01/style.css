@@ -1,0 +1,172 @@
+/* Paleta propia de esta invitación de ejemplo. */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #1b1621;
+  color: #eee7ed;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+}
+.cover {
+  min-height: 690px;
+  padding: 75px 20px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(ellipse at center, #27202b 0, #1b1621 68%);
+  position: relative;
+}
+.cover:before {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border: 1px solid #62465d;
+  pointer-events: none;
+}
+.topline,
+.eyebrow {
+  font:
+    9px Arial,
+    sans-serif;
+  letter-spacing: 0.2em;
+}
+.branch {
+  font-size: 53px;
+  color: #a783ce;
+  margin: 30px;
+}
+.we {
+  font-style: italic;
+  font-size: 19px;
+  color: #ae8cd0;
+  margin: 0 0 16px;
+}
+h1 {
+  font-size: clamp(54px, 10vw, 82px);
+  font-weight: 400;
+  line-height: 0.98;
+  margin: 0;
+}
+h1 i {
+  font-size: 0.6em;
+  color: #df7782;
+}
+.date {
+  font:
+    11px Arial,
+    sans-serif;
+  letter-spacing: 0.25em;
+  margin-top: 29px;
+}
+.scroll {
+  font:
+    9px Arial,
+    sans-serif;
+  letter-spacing: 0.15em;
+  margin-top: 60px;
+  color: #b69bd1;
+  text-decoration: none;
+}
+.details {
+  padding: 85px 20px 75px;
+  max-width: 650px;
+  margin: auto;
+}
+.eyebrow {
+  color: #b196d0;
+}
+.details h2 {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.15;
+}
+.details h2 em {
+  color: #ae8cd0;
+  font-weight: 400;
+}
+.details > p:not(.eyebrow) {
+  font-size: 14px;
+  color: #beb0bf;
+}
+.venue {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 28px;
+}
+.venue strong {
+  font-size: 20px;
+  font-weight: 400;
+}
+.venue span {
+  font:
+    11px Arial,
+    sans-serif;
+  color: #b4a6b4;
+}
+.map {
+  display: inline-block;
+  color: #d4bdde;
+  font:
+    11px Arial,
+    sans-serif;
+  border-bottom: 1px solid #83658d;
+  padding-bottom: 4px;
+}
+button,
+form button {
+  display: block;
+  margin: 28px auto 0;
+  background: #7a2b49;
+  color: white;
+  border: 0;
+  padding: 14px 25px;
+  font:
+    11px Arial,
+    sans-serif;
+  cursor: pointer;
+}
+form {
+  max-width: 330px;
+  margin: 25px auto;
+  text-align: left;
+  font:
+    11px Arial,
+    sans-serif;
+}
+form label {
+  display: block;
+  margin: 12px 0 5px;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #64495f;
+  background: #29222e;
+  color: #eee7ed;
+}
+form textarea {
+  height: 75px;
+}
+form button {
+  width: 100%;
+}
+footer {
+  background: #302536;
+  padding: 28px;
+  font-style: italic;
+  color: #b5a5b5;
+}
+footer strong {
+  display: block;
+  font: 20px Georgia;
+  margin-top: 6px;
+}

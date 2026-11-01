@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Valeria y Nicolás celebran su boda." />
+    <title>Valeria &amp; Nicolás — Nos casamos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="cover">
+        <span class="topline">CON ALEGRÍA EN EL CORAZÓN</span>
+        <div class="branch">❋</div>
+        <p class="we">nos casamos</p>
+        <h1>Valeria <i>&amp;</i><br />Nicolás</h1>
+        <p class="date">12 · JUNIO · 2027</p>
+        <a href="#celebration" class="scroll">DESCUBRE LOS DETALLES ↓</a>
+      </section>
+      <section class="details" id="celebration">
+        <p class="eyebrow">NOS ENCANTARÍA QUE NOS ACOMPAÑARAS</p>
+        <h2>Una nueva aventura<br /><em>comienza aquí.</em></h2>
+        <p>Sábado, 12 de junio de 2027 · 4:00 p. m.</p>
+        <div class="venue">
+          <strong>Hacienda Las Palmas</strong><span>Vía La Calera, Bogotá</span>
+        </div>
+        <a
+          class="map"
+          href="https://maps.google.com/?q=Hacienda+Las+Palmas+Bogota"
+          target="_blank"
+          rel="noreferrer"
+          >Ver ubicación ↗</a
+        >
+        <button id="show-rsvp" aria-expanded="false">
+          Confirma tu asistencia
+        </button>
+        <!-- Cada invitado envía su confirmación mediante WhatsApp. -->
+        <form id="rsvp-form" hidden>
+          <label for="guest">Tu nombre</label>
+          <input id="guest" name="guest" required maxlength="70" />
+          <label for="attending">¿Nos acompañas?</label>
+          <select id="attending" name="attending" required>
+            <option value="">Elige una opción</option>
+            <option>Sí, allí estaré</option>
+            <option>Esta vez no podré</option>
+          </select>
+          <label for="guests">Acompañantes</label>
+          <select id="guests" name="guests">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+          <label for="note">Un mensaje (opcional)</label>
+          <textarea id="note" name="note" maxlength="250"></textarea>
+          <button type="submit">Enviar confirmación</button>
+          <p id="status" role="status"></p>
+        </form>
+      </section>
+      <footer>Con cariño, <strong>V &amp; N</strong></footer>
+    </main>
+    <script src="../../../js/whatsapp.js"></script>
+    <script src="../../../js/rsvp.js"></script>
+  </body>
+</html>

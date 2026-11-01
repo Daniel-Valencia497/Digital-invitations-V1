@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ejemplo de invitación digital premium para una fiesta de quince años."
+    />
+    <title>Mis quince | Invitación de ejemplo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="cover" id="portada">
+      <div class="cover-glow" aria-hidden="true"></div>
+      <div class="cover-frame">
+        <div class="eyebrow">Una noche de sueños y alegría</div>
+        <h1>Mis <span>Quince</span></h1>
+        <div class="subtitle">Valentina Isabella Torres</div>
+        <p class="guest">Con mucho cariño para:</p>
+        <p class="guest" id="guestName">Familia y amigos</p>
+        <p class="pass">Admisión: 1 pase</p>
+        <button class="btn" id="openBtn" type="button">
+          Abrir invitación ✦
+        </button>
+        <span class="scroll-hint"
+          >UNA VEZ ABIERTA, DESLIZA PARA DESCUBRIR LOS DETALLES</span
+        >
+      </div>
+    </header>
+
+    <main class="invitation" id="invitation">
+      <section class="section intro">
+        <div class="inner">
+          <div class="ornament">✧ ❦ ✧</div>
+          <div class="kicker">Mis quince años</div>
+          <h2>Una noche que guardaré en el corazón</h2>
+          <div class="name">Valentina Isabella</div>
+          <p>
+            Con mucha ilusión quiero invitarte a celebrar mis quince años. Será
+            una noche para compartir, bailar y crear recuerdos que nos
+            acompañarán siempre.
+          </p>
+          <p>Tu presencia hará que este día sea aún más especial.</p>
+        </div>
+      </section>
+
+      <section class="photo-section" aria-label="Decoración de la celebración">
+        <div class="photo-panel">
+          <img
+            src="imgs/image.png"
+            alt="Decoración elegante en tonos rosa y dorado para una fiesta de quince años"
+          />
+          <div class="photo-caption">
+            <div class="kicker">Una celebración inolvidable</div>
+            <h2>Un sueño hecho realidad</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section countdown-section">
+        <div class="inner">
+          <div class="kicker">La cuenta regresiva ha comenzado</div>
+          <h2>Falta muy poco</h2>
+          <p>Nos vemos el sábado 12 de diciembre de 2026.</p>
+          <div class="countdown" aria-label="Cuenta regresiva hasta el evento">
+            <div class="time-box">
+              <strong id="days">00</strong><span>Días</span>
+            </div>
+            <div class="time-box">
+              <strong id="hours">00</strong><span>Horas</span>
+            </div>
+            <div class="time-box">
+              <strong id="minutes">00</strong><span>Minutos</span>
+            </div>
+            <div class="time-box">
+              <strong id="seconds">00</strong><span>Segundos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section details">
+        <div class="inner">
+          <div class="kicker">Detalles del evento</div>
+          <h2>Me encantará verte</h2>
+          <div class="detail-grid">
+            <article class="detail">
+              <div class="ornament">✧</div>
+              <h3>Recepción</h3>
+              <p><strong>Salón Jardines de Luna</strong></p>
+              <p>Sábado 12 de diciembre<br />20:00</p>
+              <p>Av. de los Ejemplos 123, Guayaquil</p>
+              <a
+                class="btn"
+                href="https://maps.google.com/?q=Guayaquil+Ecuador"
+                target="_blank"
+                rel="noopener"
+                >Ver mapa</a
+              >
+            </article>
+            <article class="detail">
+              <div class="ornament">✧</div>
+              <h3>La celebración</h3>
+              <p><strong>Una noche para brillar</strong></p>
+              <p>La cena y el baile comenzarán a las 21:00.</p>
+              <p>¡Gracias por acompañarme en este momento tan especial!</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dress">
+        <div class="inner">
+          <div class="ornament">✧</div>
+          <div class="kicker">Código de vestimenta</div>
+          <h2>Elegancia formal</h2>
+          <div class="dress-code">VESTIMENTA FORMAL</div>
+          <p>
+            Elige tu atuendo formal favorito y prepárate para disfrutar una
+            noche llena de alegría.
+          </p>
+        </div>
+      </section>
+
+      <section class="section gifts">
+        <div class="inner">
+          <div class="kicker">Un detalle de cariño</div>
+          <h2>Regalos</h2>
+          <div class="gift-panel">
+            <div class="ornament">♡</div>
+            <p>
+              Lo más importante para mí es contar con tu presencia. Si deseas
+              tener un detalle, puedes hacerlo mediante un sobre.
+            </p>
+            <button
+              class="btn"
+              id="giftBtn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="giftInfo"
+            >
+              Ver información
+            </button>
+            <p class="gift-info" id="giftInfo" hidden>
+              Este es un dato de demostración. Reemplázalo por la información
+              real al personalizar la invitación.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rsvp">
+        <div class="inner">
+          <div class="kicker">Será un honor contar contigo</div>
+          <h2>¿Me acompañas?</h2>
+          <p>
+            Confirma tu asistencia para ayudarme a preparar cada detalle. El
+            enlace usa un número ficticio; reemplázalo antes de compartir la
+            invitación.
+          </p>
+          <a class="btn" id="rsvpBtn" href="#" target="_blank" rel="noopener"
+            >Confirmar por WhatsApp</a
+          >
+          <br />
+          <a class="btn outline back-top" href="#portada"
+            >Volver a la portada ↑</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      INVITACIÓN DE DEMOSTRACIÓN · NOMBRES, FECHA Y LUGAR FICTICIOS
+    </footer>
+
+    <script>
+      const openBtn = document.getElementById("openBtn");
+      const invitation = document.getElementById("invitation");
+      openBtn.addEventListener("click", () => {
+        invitation.classList.add("visible");
+        openBtn.textContent = "Invitación abierta ✓";
+        openBtn.disabled = true;
+        invitation.scrollIntoView({ behavior: "smooth" });
+      });
+
+      const eventDate = new Date("2026-12-12T20:00:00-05:00").getTime();
+      function updateCountdown() {
+        const distance = eventDate - Date.now();
+        const values =
+          distance > 0
+            ? {
+                days: Math.floor(distance / 86400000),
+                hours: Math.floor((distance % 86400000) / 3600000),
+                minutes: Math.floor((distance % 3600000) / 60000),
+                seconds: Math.floor((distance % 60000) / 1000),
+              }
+            : { days: 0, hours: 0, minutes: 0, seconds: 0 };
+        Object.entries(values).forEach(([id, value]) => {
+          document.getElementById(id).textContent = String(value).padStart(
+            2,
+            "0",
+          );
+        });
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      const giftBtn = document.getElementById("giftBtn");
+      giftBtn.addEventListener("click", () => {
+        const info = document.getElementById("giftInfo");
+        info.hidden = !info.hidden;
+        giftBtn.textContent = info.hidden
+          ? "Ver información"
+          : "Ocultar información";
+        giftBtn.setAttribute("aria-expanded", String(!info.hidden));
+      });
+
+      const whatsappNumber = "593999999999";
+      const message =
+        "Hola, confirmo mi asistencia a los quince años de Valentina Isabella.";
+      document.getElementById("rsvpBtn").href =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+/* Paleta propia de esta invitación de ejemplo. */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #2a2230;
+  color: #eee6ed;
+  font-family: Arial, sans-serif;
+}
+.page {
+  max-width: 900px;
+  margin: auto;
+  background: #201923;
+  min-height: 100vh;
+}
+.hero {
+  min-height: 660px;
+  background: #221728;
+  color: #f0e7ee;
+  padding: 65px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero:before,
+.hero:after {
+  content: "✳";
+  position: absolute;
+  color: #81639a;
+  opacity: 0.4;
+  font-size: 200px;
+}
+.hero:before {
+  left: -70px;
+  top: 20px;
+}
+.hero:after {
+  right: -75px;
+  bottom: -5px;
+}
+.overline {
+  font-size: 9px;
+  letter-spacing: 0.23em;
+}
+.star {
+  font-size: 38px;
+  color: #d56b7b;
+  margin: 35px;
+}
+.serif {
+  font:
+    italic 47px/1.05 Georgia,
+    serif;
+  margin: 0 0 30px;
+}
+.hero h1 {
+  font-size: 12px;
+  letter-spacing: 0.34em;
+  line-height: 2;
+  font-weight: 400;
+}
+.date {
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  margin-top: 21px;
+}
+.hero > a {
+  font-size: 8px;
+  color: #e2bac4;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  margin-top: 52px;
+}
+.details {
+  padding: 75px 22px;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+.details .overline {
+  color: #b49bcf;
+}
+.details h2 {
+  font:
+    400 39px/1.17 Georgia,
+    serif;
+}
+.details h2 em {
+  color: #ae8cd0;
+}
+.details > p:not(.overline) {
+  max-width: 380px;
+  margin: 15px auto;
+  color: #c3b5c1;
+  font:
+    13px/1.8 Georgia,
+    serif;
+}
+.event {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 30px auto;
+}
+.event span {
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  color: #b49bcf;
+  margin-top: 14px;
+}
+.event strong {
+  font:
+    20px Georgia,
+    serif;
+  font-weight: 400;
+}
+.event small {
+  font-size: 10px;
+  color: #b8aab8;
+}
+.map {
+  font-size: 10px;
+  color: #d4bdde;
+  text-decoration: none;
+  border-bottom: 1px solid #8d6a98;
+  padding-bottom: 4px;
+}
+button,
+form button {
+  display: block;
+  margin: 27px auto 0;
+  padding: 13px 24px;
+  border: 0;
+  background: #55263d;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+form {
+  max-width: 320px;
+  margin: 23px auto;
+  text-align: left;
+  font-size: 10px;
+}
+form label {
+  display: block;
+  margin: 11px 0 5px;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4d3b53;
+  background: #29222e;
+  color: #eee6ed;
+}
+form textarea {
+  height: 74px;
+}
+form button {
+  width: 100%;
+}
+footer {
+  padding: 24px;
+  text-align: center;
+  background: #2a2230;
+  color: #b8aab8;
+  font-size: 8px;
+  letter-spacing: 0.17em;
+}
+footer span {
+  padding-inline: 10px;
+  color: #b89bd4;
+}

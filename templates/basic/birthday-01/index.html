@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Una invitación de cumpleaños para celebrar contigo."
+    />
+    <title>Una vuelta más al sol</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="invitation">
+      <p class="eyebrow">TE INVITO A CELEBRAR</p>
+      <div class="sun">✳</div>
+      <p class="script">Una vuelta<br />más al sol</p>
+      <h1>Lucía <span>cumple</span> 30</h1>
+      <div class="rule"></div>
+      <p class="details">SÁBADO · 12 JUNIO · 2027</p>
+      <p class="details">4:00 p. m. · Casa Jardín</p>
+      <p class="address">Cra. 5 # 12-40 · Bogotá</p>
+      <button class="rsvp-open" id="show-rsvp" aria-expanded="false">
+        Confirma tu asistencia <span>↗</span>
+      </button>
+      <!-- La respuesta se prepara para enviarse por WhatsApp. -->
+      <form id="rsvp-form" hidden>
+        <label for="guest">Tu nombre</label>
+        <input
+          id="guest"
+          name="guest"
+          required
+          maxlength="70"
+          placeholder="Nombre y apellido"
+        />
+        <label for="attending">¿Nos acompañas?</label>
+        <select id="attending" name="attending" required>
+          <option value="">Elige una opción</option>
+          <option>Sí, allí estaré</option>
+          <option>Esta vez no podré</option>
+        </select>
+        <label for="guests">Acompañantes</label>
+        <select id="guests" name="guests">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <button type="submit">Enviar por WhatsApp</button>
+        <p id="status" role="status"></p>
+      </form>
+      <p class="footnote">¡Qué alegría compartirlo contigo!</p>
+    </main>
+    <script src="../../../js/whatsapp.js"></script>
+    <script src="../../../js/rsvp.js"></script>
+  </body>
+</html>
