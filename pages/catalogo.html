@@ -75,73 +75,154 @@
               Graduación
             </button>
           </div>
-          <span class="catalog-count" aria-live="polite">3 diseños</span>
+          <span class="catalog-count" aria-live="polite">4 diseños</span>
         </div>
-        <!-- El catálogo contiene una plantilla de referencia para cada plan. -->
-        <div class="catalog-grid">
-          <article class="catalog-item" data-category="cumpleanos">
-            <div class="catalog-art birthday">
-              <span class="catalog-label">CUMPLEAÑOS · PLAN BÁSICO</span
-              ><span class="birthday-sun">✳</span
-              ><strong>Una vuelta<br /><em>más al sol</em></strong
-              ><small>LUCÍA CUMPLE 30</small>
-            </div>
-            <div class="catalog-info">
-              <div>
-                <h2>Día de sol</h2>
-                <p>Colorida · Alegre · Personalizable</p>
+        <section
+          class="catalog-plan-section"
+          data-plan-section="basic"
+          aria-labelledby="catalog-basic-title"
+        >
+          <h2 class="catalog-plan-title" id="catalog-basic-title">
+            Plan básico
+          </h2>
+          <div class="catalog-grid">
+            <article
+              class="catalog-item"
+              data-category="cumpleanos"
+              data-plan="basic"
+            >
+              <div class="catalog-art">
+                <img
+                  class="catalog-preview"
+                  src="../templates/basic/birthday-01/preview.svg"
+                  alt="Vista previa de Día de sol, una invitación colorida de cumpleaños"
+                  width="800"
+                  height="620"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="catalog-label">CUMPLEAÑOS · PLAN BÁSICO</span>
               </div>
-              <a href="../templates/basic/birthday-01/">Ver plantilla ↗</a>
-            </div>
-          </article>
-          <article class="catalog-item" data-category="cumpleanos">
-            <div class="catalog-art birthday">
-              <span class="catalog-label"> XV-Cumple </span>
-              <span class="birthday-sun">✳</span>
-              <strong>Una quinceañera inolvidable<br /><em>No te lo pierdas.</em></strong
-              ><small>LUCÍA CUMPLE 30</small>
-            </div>
-            <div class="catalog-info">
-              <div>
-                <h2>Día de sol</h2>
-                <p>Colorida · Alegre · Personalizable</p>
+              <div class="catalog-info">
+                <div>
+                  <h3>Día de sol</h3>
+                  <p>Colorida · Alegre · Personalizable</p>
+                </div>
+                <a href="../templates/basic/birthday-01/">Ver plantilla ↗</a>
               </div>
-              <a href="../templates/intermediate/XV-cumple/invitacion.html">Ver plantilla ↗</a>
-            </div>
-          </article>
-          <article class="catalog-item" data-category="boda">
-            <div class="catalog-art wedding">
-              <span class="catalog-label">BODA · PLAN INTERMEDIO</span
-              ><span class="mini-wreath">❋</span
-              ><strong>Una vida<br /><em>juntos</em></strong
-              ><small>VALERIA &amp; NICOLÁS</small>
-            </div>
-            <div class="catalog-info">
-              <div>
-                <h2>Jardín en calma</h2>
-                <p>Romántica · Natural · Minimalista</p>
+            </article>
+          </div>
+        </section>
+        <section
+          class="catalog-plan-section"
+          data-plan-section="intermediate"
+          aria-labelledby="catalog-intermediate-title"
+        >
+          <h2 class="catalog-plan-title" id="catalog-intermediate-title">
+            Plan intermedio
+          </h2>
+          <div class="catalog-grid">
+            <article
+              class="catalog-item"
+              data-category="cumpleanos"
+              data-plan="intermediate"
+            >
+              <div class="catalog-art">
+                <img
+                  class="catalog-preview"
+                  src="../templates/intermediate/XV-cumple/preview.svg"
+                  alt="Vista previa de Noche de quince, una invitación elegante en tonos rosa y dorado"
+                  width="800"
+                  height="620"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="catalog-label">CUMPLEAÑOS · PLAN INTERMEDIO</span>
               </div>
-              <a href="../templates/intermediate/wedding-01/"
-                >Ver plantilla ↗</a
-              >
-            </div>
-          </article>
-          <article class="catalog-item" data-category="graduacion">
-            <div class="catalog-art graduation">
-              <span class="catalog-label">GRADUACIÓN · PLAN AVANZADO</span
-              ><span class="grad-star">✦</span
-              ><strong>Lo mejor<br /><em>está por venir</em></strong
-              ><small>PROMOCIÓN 2026</small>
-            </div>
-            <div class="catalog-info">
-              <div>
-                <h2>Nuevos comienzos</h2>
-                <p>Editorial · Contemporánea · Única</p>
+              <div class="catalog-info">
+                <div>
+                  <h3>Noche de quince</h3>
+                  <p>Elegante · Rosa · Interactiva</p>
+                </div>
+                <a href="../templates/intermediate/XV-cumple/invitacion.html"
+                  >Ver plantilla ↗</a
+                >
               </div>
-              <a href="../templates/advanced/graduation-01/">Ver plantilla ↗</a>
-            </div>
-          </article>
-        </div>
+            </article>
+            <article
+              class="catalog-item"
+              data-category="boda"
+              data-plan="intermediate"
+            >
+              <div class="catalog-art">
+                <img
+                  class="catalog-preview"
+                  src="../templates/intermediate/wedding-01/preview.svg"
+                  alt="Vista previa de Jardín en calma, una invitación de boda romántica y natural"
+                  width="800"
+                  height="620"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="catalog-label">BODA · PLAN INTERMEDIO</span>
+              </div>
+              <div class="catalog-info">
+                <div>
+                  <h3>Jardín en calma</h3>
+                  <p>Romántica · Natural · Minimalista</p>
+                </div>
+                <a href="../templates/intermediate/wedding-01/"
+                  >Ver plantilla ↗</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+        <section
+          class="catalog-plan-section"
+          data-plan-section="advanced"
+          id="plan-avanzado"
+          aria-labelledby="catalog-advanced-title"
+        >
+          <h2 class="catalog-plan-title" id="catalog-advanced-title">
+            Plan avanzado
+          </h2>
+          <p class="catalog-plan-note">
+            Estas presentaciones muestran ejemplos del estilo y nivel de
+            exclusividad. No son plantillas para elegir: cada invitación de este
+            plan se crea desde cero. Música y videos son ideas para explorar más
+            adelante, no funciones incluidas actualmente.
+          </p>
+          <div class="catalog-grid">
+            <article
+              class="catalog-item"
+              data-category="graduacion"
+              data-plan="advanced"
+            >
+              <div class="catalog-art">
+                <img
+                  class="catalog-preview"
+                  src="../templates/advanced/graduation-01/preview.svg"
+                  alt="Vista previa de Nuevos comienzos, una invitación de graduación contemporánea"
+                  width="800"
+                  height="620"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="catalog-label">GRADUACIÓN · PLAN AVANZADO</span>
+              </div>
+              <div class="catalog-info">
+                <div>
+                  <h3>Nuevos comienzos</h3>
+                  <p>Muestra de estilo · Editorial · Exclusiva</p>
+                </div>
+                <a href="../templates/advanced/graduation-01/"
+                  >Ver presentación ↗</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="site-footer">
@@ -154,11 +235,13 @@
         <div class="footer-links">
           <a href="catalogo.html">Diseños</a><a href="servicios.html">Planes</a
           ><a href="contacto.html">Contacto</a>
+          <a href="condiciones.html">Condiciones</a>
+          <a href="privacidad.html">Privacidad</a>
         </div>
       </div>
       <div class="wrap footer-bottom">
         <span>© 2026 Estudio Nítida</span
-        ><span>Diseñado con intención en Colombia <i>✳</i></span>
+        ><span>Emprendimiento en Ecuador <i>✳</i></span>
       </div>
     </footer>
     <script src="../js/main.js"></script>

@@ -6,13 +6,16 @@ Primera versión estática hecha con HTML, CSS y JavaScript. No requiere instala
 
 Abre `index.html` en el navegador o publica la carpeta en un hosting estático. Las rutas están preparadas para funcionar desde la raíz del sitio.
 
+Para agregar diseños y entender la estructura del código, consulta la [guía de desarrollo](readme_desarrollo.md).
+
 ## Qué incluye
 
 - Inicio y navegación responsive.
 - Catálogo con filtros de evento y una vista de cada plantilla de ejemplo.
 - Descripción de planes básico, intermedio y avanzado.
 - Formulario de solicitud que prepara un mensaje y lo abre en WhatsApp.
-- Una plantilla independiente de ejemplo por plan en `templates/`.
+- Borradores de condiciones del servicio y aviso de privacidad en `pages/`.
+- Plantillas independientes de ejemplo organizadas por plan en `templates/`.
 - Un ejemplo de invitación publicada en `invitations/ejemplo/`, con confirmación RSVP por WhatsApp.
 
 ## Configurar los números de WhatsApp
@@ -24,6 +27,7 @@ El formulario no envía ni guarda datos en el sitio: abre WhatsApp con el texto 
 ## Plantillas
 
 - `templates/basic/birthday-01/`: cumpleaños, plan básico.
+- `templates/intermediate/XV-cumple/`: quince años, plan intermedio.
 - `templates/intermediate/wedding-01/`: boda, plan intermedio.
 - `templates/advanced/graduation-01/`: graduación, plan avanzado.
 

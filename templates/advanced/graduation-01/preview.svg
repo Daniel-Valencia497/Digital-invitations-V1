@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="620" viewBox="0 0 800 620">
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2a2230" />
+      <stop offset="1" stop-color="#17131d" />
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#81639a" stop-opacity=".45" />
+      <stop offset="1" stop-color="#81639a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="620" fill="url(#backdrop)" />
+  <circle cx="170" cy="500" r="230" fill="url(#glow)" />
+  <circle cx="650" cy="100" r="190" fill="url(#glow)" />
+  <path d="M94 133l9 18 20 3-15 14 4 20-18-10-18 10 4-20-15-14 20-3zM683 450l7 14 15 2-11 11 3 15-14-7-13 7 3-15-11-11 15-2z" fill="#d56b7b" opacity=".8" />
+  <rect x="256" y="34" width="288" height="552" fill="#201923" stroke="#81639a" stroke-width="2" />
+  <rect x="276" y="54" width="248" height="512" fill="none" stroke="#81639a" stroke-opacity=".55" />
+  <text x="400" y="99" fill="#eee6ed" font-family="Arial,sans-serif" font-size="11" letter-spacing="3" text-anchor="middle">PROMOCIÓN · DOS MIL VEINTISÉIS</text>
+  <text x="400" y="165" fill="#d56b7b" font-family="Georgia,serif" font-size="46" text-anchor="middle">✦</text>
+  <text x="400" y="223" fill="#eee6ed" font-family="Georgia,serif" font-size="35" font-style="italic" text-anchor="middle">Lo mejor</text>
+  <text x="400" y="263" fill="#ae8cd0" font-family="Georgia,serif" font-size="35" font-style="italic" text-anchor="middle">está por venir.</text>
+  <text x="400" y="321" fill="#eee6ed" font-family="Arial,sans-serif" font-size="16" letter-spacing="4" text-anchor="middle">CELEBREMOS</text>
+  <text x="400" y="350" fill="#eee6ed" font-family="Arial,sans-serif" font-size="16" letter-spacing="4" text-anchor="middle">EL CAMINO</text>
+  <path d="M330 374h140" stroke="#81639a" />
+  <text x="400" y="410" fill="#e2bac4" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" text-anchor="middle">VIERNES, 20 NOVIEMBRE</text>
+  <text x="400" y="435" fill="#e2bac4" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" text-anchor="middle">7:00 P. M.</text>
+  <text x="400" y="490" fill="#eee6ed" font-family="Georgia,serif" font-size="19" text-anchor="middle">Lo logramos.</text>
+  <text x="400" y="518" fill="#ae8cd0" font-family="Georgia,serif" font-size="16" font-style="italic" text-anchor="middle">Y esto recién empieza.</text>
+</svg>

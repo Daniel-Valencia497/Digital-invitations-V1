@@ -222,6 +222,7 @@
   .footer-links {
     gap: 16px;
     font-size: 10px;
+    flex-wrap: wrap;
   }
   .footer-bottom {
     gap: 8px;
@@ -250,7 +251,12 @@
   .catalog-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+  .catalog-plan-section:last-child {
     padding-bottom: 65px;
+  }
+  .catalog-plan-title {
+    font-size: 24px;
   }
   .catalog-art {
     height: 340px;

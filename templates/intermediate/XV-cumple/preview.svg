@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="620" viewBox="0 0 800 620">
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#21101c" />
+      <stop offset=".58" stop-color="#482238" />
+      <stop offset="1" stop-color="#1c111d" />
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#d89baa" stop-opacity=".55" />
+      <stop offset="1" stop-color="#d89baa" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="620" fill="url(#backdrop)" />
+  <circle cx="400" cy="310" r="330" fill="url(#glow)" />
+  <circle cx="146" cy="150" r="3" fill="#dfc08a" />
+  <circle cx="635" cy="124" r="4" fill="#dfc08a" />
+  <circle cx="670" cy="472" r="3" fill="#dfc08a" />
+  <path d="M142 152l6 13 14 2-10 9 2 14-12-7-12 7 2-14-10-9 14-2zM638 126l5 10 11 2-8 7 2 11-10-5-9 5 2-11-8-7 11-2z" fill="#dfc08a" opacity=".8" />
+  <rect x="253" y="34" width="294" height="552" fill="#2a1725" stroke="#dfc08a" stroke-opacity=".8" stroke-width="2" />
+  <rect x="270" y="51" width="260" height="518" fill="none" stroke="#dfc08a" stroke-opacity=".45" />
+  <text x="400" y="100" fill="#dfc08a" font-family="Arial,sans-serif" font-size="11" letter-spacing="3" text-anchor="middle">UNA NOCHE DE SUEÑOS Y ALEGRÍA</text>
+  <text x="400" y="180" fill="#f3d9db" font-family="Georgia,serif" font-size="35" text-anchor="middle">Mis</text>
+  <text x="400" y="233" fill="#f3d9db" font-family="Georgia,serif" font-size="48" font-style="italic" text-anchor="middle">Quince</text>
+  <path d="M320 255h160" stroke="#dfc08a" />
+  <text x="400" y="292" fill="#f3d9db" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" text-anchor="middle">VALENTINA ISABELLA TORRES</text>
+  <text x="400" y="344" fill="#f3d9db" font-family="Georgia,serif" font-size="20" font-style="italic" text-anchor="middle">Una noche que guardaré</text>
+  <text x="400" y="372" fill="#f3d9db" font-family="Georgia,serif" font-size="20" font-style="italic" text-anchor="middle">en el corazón</text>
+  <text x="400" y="423" fill="#dfc08a" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" text-anchor="middle">SÁBADO · 12 DICIEMBRE · 2026</text>
+  <rect x="333" y="454" width="134" height="36" rx="2" fill="#dfc08a" />
+  <text x="400" y="477" fill="#2a1721" font-family="Arial,sans-serif" font-size="11" font-weight="bold" letter-spacing="1" text-anchor="middle">ABRIR INVITACIÓN</text>
+  <text x="400" y="530" fill="#f3d9db" font-family="Georgia,serif" font-size="16" font-style="italic" text-anchor="middle">Una celebración inolvidable</text>
+</svg>

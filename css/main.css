@@ -401,8 +401,19 @@ h2 em {
 }
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 360px));
   gap: 23px;
+}
+.featured-plan + .featured-plan {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.featured-plan-title {
+  margin: 0 0 15px;
+  color: var(--violet);
+  font-size: 10px;
+  letter-spacing: 0.16em;
 }
 .feature-art {
   height: 330px;

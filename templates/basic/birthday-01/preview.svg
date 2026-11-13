@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="620" viewBox="0 0 800 620">
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#211722" />
+      <stop offset="1" stop-color="#482638" />
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#b8425a" stop-opacity=".5" />
+      <stop offset="1" stop-color="#b8425a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="620" fill="url(#backdrop)" />
+  <circle cx="200" cy="500" r="220" fill="url(#glow)" />
+  <circle cx="650" cy="120" r="180" fill="url(#glow)" />
+  <path d="M92 495c55-90 98-105 145-110M565 171c42-48 83-61 139-57" fill="none" stroke="#df7580" stroke-opacity=".35" stroke-width="2" />
+  <rect x="258" y="34" width="284" height="552" rx="4" fill="#2b222d" stroke="#715080" stroke-width="2" />
+  <path d="M278 54h244v512H278z" fill="none" stroke="#65485d" />
+  <text x="400" y="96" fill="#f0e8ed" font-family="Arial,sans-serif" font-size="12" letter-spacing="3" text-anchor="middle">TE INVITO A CELEBRAR</text>
+  <text x="400" y="160" fill="#df7580" font-family="Georgia,serif" font-size="50" text-anchor="middle">✳</text>
+  <text x="400" y="220" fill="#df7580" font-family="Georgia,serif" font-size="34" font-style="italic" text-anchor="middle">Una vuelta</text>
+  <text x="400" y="258" fill="#df7580" font-family="Georgia,serif" font-size="34" font-style="italic" text-anchor="middle">más al sol</text>
+  <text x="400" y="321" fill="#f0e8ed" font-family="Georgia,serif" font-size="27" text-anchor="middle">Lucía cumple 30</text>
+  <path d="M326 345h148" stroke="#65485d" />
+  <text x="400" y="382" fill="#e8cfde" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" text-anchor="middle">SÁBADO · 12 JUNIO · 2027</text>
+  <text x="400" y="410" fill="#d2bdca" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">4:00 p. m. · Casa Jardín</text>
+  <rect x="330" y="450" width="140" height="38" rx="2" fill="#6b2949" />
+  <text x="400" y="474" fill="#fff" font-family="Arial,sans-serif" font-size="12" letter-spacing="1" text-anchor="middle">CONFIRMA AQUÍ</text>
+  <text x="400" y="531" fill="#d2bdca" font-family="Georgia,serif" font-size="17" font-style="italic" text-anchor="middle">¡Te esperamos!</text>
+</svg>

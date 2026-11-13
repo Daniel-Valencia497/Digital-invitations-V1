@@ -1,4 +1,10 @@
-readme_desarrollo.md
 'Tarjetas de invitación/'
 templates/
+!templates/
+templates/*
+!templates/*/
+templates/*/*
+!templates/*/*/
+templates/*/*/*
+!templates/*/*/preview.svg
 

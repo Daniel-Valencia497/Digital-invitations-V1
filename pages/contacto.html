@@ -47,8 +47,9 @@
         <aside class="contact-aside">
           <h2>Un buen comienzo<br />es un <em>hola.</em></h2>
           <p>
-            No necesitas tener todo decidido. Cuéntanos lo que sabes y te
-            ayudamos con lo demás.
+            ¿No sabes qué plan o diseño elegir? Selecciona «Necesito asesoría»
+            en el formulario y cuéntanos qué quieres celebrar. Te orientamos
+            por WhatsApp.
           </p>
           <div class="contact-note">
             <strong>¿Ya tienes una referencia?</strong>
@@ -111,13 +112,22 @@
           </div>
           <div class="field">
             <label for="plan">Plan de interés *</label>
-            <select id="plan" name="plan" required>
+            <select
+              id="plan"
+              name="plan"
+              aria-describedby="plan-help"
+              required
+            >
               <option value="">Elige un plan</option>
               <option value="Básico">Básico</option>
               <option value="Intermedio">Intermedio</option>
               <option value="Avanzado">Avanzado</option>
               <option value="Necesito asesoría">Necesito asesoría</option>
             </select>
+            <p class="field-help" id="plan-help">
+              Si no tienes un diseño elegido, puedes describir tu idea en los
+              detalles y te recomendamos uno por WhatsApp.
+            </p>
           </div>
           <div class="field full">
             <label for="design">Diseño que te gustó (opcional)</label
@@ -159,11 +169,13 @@
         <div class="footer-links">
           <a href="catalogo.html">Diseños</a><a href="servicios.html">Planes</a
           ><a href="contacto.html">Contacto</a>
+          <a href="condiciones.html">Condiciones</a>
+          <a href="privacidad.html">Privacidad</a>
         </div>
       </div>
       <div class="wrap footer-bottom">
         <span>© 2026 Estudio Nítida</span
-        ><span>Diseñado con intención en Colombia <i>✳</i></span>
+        ><span>Emprendimiento en Ecuador <i>✳</i></span>
       </div>
     </footer>
     <script src="../js/main.js"></script>

@@ -126,41 +126,76 @@
               >Ver todos los diseños <span>→</span></a
             >
           </div>
-          <div class="featured-grid">
-            <a class="feature-card" href="pages/catalogo.html">
-              <div class="feature-art feature-wedding">
-                <span class="feature-tag">BODA · PLAN INTERMEDIO</span>
-                <div class="mini-wreath">❋</div>
-                <strong>Una vida<br /><em>juntos</em></strong
-                ><small>Valeria &amp; Nicolás</small>
-              </div>
-              <div class="feature-meta">
-                <span>Jardín en calma</span><span>01 ↗</span>
-              </div>
-            </a>
-            <a class="feature-card" href="pages/catalogo.html">
-              <div class="feature-art feature-birthday">
-                <span class="feature-tag">CUMPLEAÑOS · PLAN BÁSICO</span
-                ><span class="birthday-sun">✳</span
-                ><strong>Una vuelta<br /><em>más al sol</em></strong
-                ><small>Lucía cumple 30</small>
-              </div>
-              <div class="feature-meta">
-                <span>Día de sol</span><span>02 ↗</span>
-              </div>
-            </a>
-            <a class="feature-card" href="pages/catalogo.html">
-              <div class="feature-art feature-graduation">
-                <span class="feature-tag">GRADUACIÓN · PLAN AVANZADO</span
-                ><span class="grad-star">✦</span
-                ><strong>Lo mejor<br /><em>está por venir</em></strong
-                ><small>Promoción 2026</small>
-              </div>
-              <div class="feature-meta">
-                <span>Nuevos comienzos</span><span>03 ↗</span>
-              </div>
-            </a>
-          </div>
+          <section
+            class="featured-plan"
+            data-plan-section="basic"
+            aria-labelledby="featured-basic-title"
+          >
+            <h3 class="featured-plan-title" id="featured-basic-title">
+              PLAN BÁSICO
+            </h3>
+            <div class="featured-grid">
+              <a class="feature-card" href="pages/catalogo.html">
+                <div class="feature-art feature-birthday">
+                  <span class="feature-tag">CUMPLEAÑOS · PLAN BÁSICO</span
+                  ><span class="birthday-sun">✳</span
+                  ><strong>Una vuelta<br /><em>más al sol</em></strong
+                  ><small>Lucía cumple 30</small>
+                </div>
+                <div class="feature-meta">
+                  <span>Día de sol</span><span>01 ↗</span>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section
+            class="featured-plan"
+            data-plan-section="intermediate"
+            aria-labelledby="featured-intermediate-title"
+          >
+            <h3 class="featured-plan-title" id="featured-intermediate-title">
+              PLAN INTERMEDIO
+            </h3>
+            <div class="featured-grid">
+              <a class="feature-card" href="pages/catalogo.html">
+                <div class="feature-art feature-wedding">
+                  <span class="feature-tag">BODA · PLAN INTERMEDIO</span>
+                  <div class="mini-wreath">❋</div>
+                  <strong>Una vida<br /><em>juntos</em></strong
+                  ><small>Valeria &amp; Nicolás</small>
+                </div>
+                <div class="feature-meta">
+                  <span>Jardín en calma</span><span>02 ↗</span>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section
+            class="featured-plan"
+            data-plan-section="advanced"
+            aria-labelledby="featured-advanced-title"
+          >
+            <h3 class="featured-plan-title" id="featured-advanced-title">
+              PLAN AVANZADO
+            </h3>
+            <div class="featured-grid">
+              <a
+                class="feature-card"
+                href="pages/catalogo.html#plan-avanzado"
+              >
+                <div class="feature-art feature-graduation">
+                  <span class="feature-tag"
+                    >MUESTRA DE ESTILO · PLAN AVANZADO</span
+                  ><span class="grad-star">✦</span
+                  ><strong>Lo mejor<br /><em>está por venir</em></strong
+                  ><small>Promoción 2026</small>
+                </div>
+                <div class="feature-meta">
+                  <span>Nuevos comienzos</span><span>03 ↗</span>
+                </div>
+              </a>
+            </div>
+          </section>
         </div>
       </section>
 
@@ -289,11 +324,13 @@
           <a href="pages/catalogo.html">Diseños</a
           ><a href="pages/servicios.html">Planes</a
           ><a href="pages/contacto.html">Contacto</a>
+          <a href="pages/condiciones.html">Condiciones</a>
+          <a href="pages/privacidad.html">Privacidad</a>
         </div>
       </div>
       <div class="wrap footer-bottom">
         <span>© 2026 Estudio Nítida</span
-        ><span>Diseñado con intención en Colombia <i>✳</i></span>
+        ><span>Emprendimiento en Ecuador <i>✳</i></span>
       </div>
     </footer>
     <script src="js/main.js"></script>

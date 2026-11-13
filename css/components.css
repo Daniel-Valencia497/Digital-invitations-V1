@@ -21,6 +21,36 @@
 .inner-page {
   min-height: 65vh;
 }
+.legal-content {
+  max-width: 850px;
+  padding: 38px 0 90px;
+}
+.legal-notice {
+  padding: 16px 18px;
+  border: 1px solid var(--violet);
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.legal-content section {
+  margin-top: 32px;
+}
+.legal-content h2 {
+  font: 500 25px var(--serif);
+  margin: 0 0 10px;
+}
+.legal-content p,
+.legal-content li {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.legal-content ul {
+  padding-left: 22px;
+}
+.legal-contact {
+  color: var(--violet);
+}
 .catalog-toolbar {
   display: flex;
   align-items: center;
@@ -54,7 +84,31 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px 22px;
+}
+.catalog-plan-section + .catalog-plan-section {
+  margin-top: 42px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.catalog-plan-section:last-child {
   padding-bottom: 90px;
+}
+.catalog-plan-title {
+  font: 500 27px var(--serif);
+  margin: 0 0 20px;
+}
+.catalog-plan-note,
+.plan-detail {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.catalog-plan-note {
+  margin: -7px 0 22px;
+}
+.plan-detail {
+  margin: 16px 0 0;
 }
 .catalog-item[hidden] {
   display: none;
@@ -62,34 +116,21 @@
 .catalog-art {
   height: 300px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background: #302436;
   overflow: hidden;
   transition:
     transform 0.4s ease,
     filter 0.4s ease;
 }
+.catalog-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .catalog-item:hover .catalog-art {
   transform: translateY(-4px);
   filter: saturate(1.12);
-}
-.catalog-art strong {
-  font: 500 37px/1.12 var(--serif);
-  position: relative;
-  z-index: 1;
-}
-.catalog-art strong em {
-  font-weight: 500;
-}
-.catalog-art small {
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  margin-top: 15px;
-  position: relative;
-  z-index: 1;
 }
 .catalog-label {
   position: absolute;
@@ -99,45 +140,14 @@
   font-size: 8px;
   letter-spacing: 0.13em;
 }
-.catalog-art.wedding {
-  background: #302436;
-  color: #e7dbe9;
-}
-.catalog-art.birthday {
-  background: #38212d;
-  color: #e8cfde;
-}
-.catalog-art.graduation {
-  background: #2a2230;
-  color: #e4d9e5;
-}
-.catalog-art.baby {
-  background: #34222e;
-  color: #dfcad9;
-}
-.catalog-art.party {
-  background: #282432;
-  color: #e5dbe9;
-}
-.catalog-art.quince {
-  background: #39232e;
-  color: #e6d2df;
-}
-.catalog-art:after {
-  content: "✿";
-  position: absolute;
-  font-size: 95px;
-  opacity: 0.12;
-  right: 12px;
-  bottom: -24px;
-}
 .catalog-info {
   display: flex;
   justify-content: space-between;
   align-items: start;
   padding-top: 13px;
 }
-.catalog-info h2 {
+.catalog-info h2,
+.catalog-info h3 {
   font: 500 19px var(--serif);
   letter-spacing: 0;
   margin: 0;
@@ -257,6 +267,12 @@
   font-size: 10px;
   letter-spacing: 0.07em;
   color: #c8bdca;
+}
+.field-help {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.55;
+  margin: 0;
 }
 .field input,
 .field select,
